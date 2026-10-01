@@ -1,5 +1,8 @@
 /* ==================== i18n dictionary — flat key/value pairs per locale ==================== */
 
+/* Single source of truth for the projects-completed stat; update here only */
+const PROJECTS_COUNT = 105;
+
 const I18N = {
   ru: {
     meta_title: "Владимир — фрилансер-разработчик",
@@ -39,8 +42,8 @@ const I18N = {
 
     stat1_num: "3+",
     stat1_label: "года опыта",
-    stat2_num: "104",
-    stat2_label: "проекта",
+    stat2_num: String(PROJECTS_COUNT),
+    stat2_label: "проектов",
     stat3_num: "до 2 часов",
     stat3_label: "ответ на сообщение",
 
@@ -146,7 +149,7 @@ const I18N = {
 
     stat1_num: "3+",
     stat1_label: "years of experience",
-    stat2_num: "104",
+    stat2_num: String(PROJECTS_COUNT),
     stat2_label: "projects completed",
     stat3_num: "under 2 hours",
     stat3_label: "reply time",
